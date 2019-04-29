@@ -12,7 +12,7 @@ const buildMarker = function(type, coords) {
   markerDomEl.style.height = "39px";
   markerDomEl.style.backgroundImage = `url(${iconURLs[type]})`;
 
-  return new mapboxgl.Markern(markerDomEl).setLngLat(coords)
+  return new mapboxgl.Marker(markerDomEl).setLngLat(coords)
 }
 
 module.exports = buildMarker

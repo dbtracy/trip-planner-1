@@ -10,6 +10,10 @@ const map = new mapboxgl.Map({
   style: "mapbox://styles/mapbox/streets-v10"
 })
 
-const marker = buildMarker('activities', [-74.009151, 40.705086])
+const marker1 = buildMarker('activities', [-74.009151, 40.705086])
+const marker2 = buildMarker('restaurants', [-73, 40.705086])
+const marker3 = buildMarker('hotels', [-72, 40.705086])
 
-marker.addTo(map)
+marker1.addTo(map)
+marker2.addTo(map)
+marker3.addTo(map)
